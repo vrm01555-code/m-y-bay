@@ -1,16 +1,4 @@
-function drawPlayer(ctx, x, y) {
-  ctx.fillStyle = "cyan"; 
-  ctx.beginPath();
-  ctx.moveTo(x, y - 20);   // mũi máy bay
-  ctx.lineTo(x - 15, y + 20); // cánh trái
-  ctx.lineTo(x + 15, y + 20); // cánh phải
-  ctx.closePath();
-  ctx.fill();
 
-  // Ô kính
-  ctx.fillStyle = "white";
-  ctx.fillRect(x - 5, y - 15, 10, 10);
-}
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -181,3 +169,16 @@ function drawPlayer(ctx, x, y) {
   </script>
 </body>
 </html>
+function drawPlayer(ctx, x, y) {
+  ctx.fillStyle = "cyan"; 
+  ctx.beginPath();
+  ctx.moveTo(x, y - 20);   // mũi máy bay
+  ctx.lineTo(x - 15, y + 20); // cánh trái
+  ctx.lineTo(x + 15, y + 20); // cánh phải
+  ctx.closePath();
+  ctx.fill();
+
+  // Ô kính
+  ctx.fillStyle = "white";
+  ctx.fillRect(x - 5, y - 15, 10, 10);
+}
